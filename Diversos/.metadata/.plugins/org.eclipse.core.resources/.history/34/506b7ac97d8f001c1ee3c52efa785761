@@ -1,0 +1,9 @@
+package br.com.laminar.revisao.DAO;
+
+//interface define as regras, metodos que as classes devem implementar (contrato)
+public interface AlimentoDAO {
+
+	void cadastrar(Alimento alimento);
+	
+	List<Alimento> listar();
+}

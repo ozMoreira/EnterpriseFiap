@@ -1,0 +1,5 @@
+package br.com.laminar.revisao.model;
+
+public class Fornecedor {
+
+}

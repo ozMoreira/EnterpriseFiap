@@ -1,0 +1,25 @@
+package br.com.fiap.entity;
+
+import java.util.Calendar;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_MUSICA")
+public class Musica {
+
+	private int codigo;
+	
+	private String nome;
+	
+	private Calendar dataLancamento;
+	
+	private float duracao;
+	
+	private String album;
+	
+	private boolean instrumental;
+	
+		
+}

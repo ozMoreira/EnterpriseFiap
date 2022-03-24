@@ -1,0 +1,24 @@
+package br.com.laminar.main;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class TesteCalendar {
+
+	public static void main(String[] args) {
+
+		Calendar hoje = Calendar.getInstance();
+		
+		Calendar abertura = new GregorianCalendar(2022,2,22,21,0);
+		SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		
+		System.out.println(dataFormatada.format(hoje.getTime()));
+		System.out.println(dataFormatada.format(abertura.getTime());
+		
+		
+		
+		
+	}
+
+}

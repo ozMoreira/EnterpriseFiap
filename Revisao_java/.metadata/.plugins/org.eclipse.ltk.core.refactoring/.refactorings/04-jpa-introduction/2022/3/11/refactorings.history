@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;04-jpa-introduction/banco.txt&apos; to &apos;Banco.txt&apos;" description="Rename resource &apos;banco.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="banco.txt" name="Banco.txt" stamp="1646874703529" updateReferences="true"/>
+</session>

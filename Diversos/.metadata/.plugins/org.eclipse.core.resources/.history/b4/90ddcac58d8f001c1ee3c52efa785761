@@ -1,0 +1,71 @@
+package br.com.laminar.revisao.model;
+
+public class Alimento {
+
+	protected String nome;
+	private boolean salgado;
+	protected float valorCalorico;
+	
+	private OrigemAlimento origemAlimento;
+
+	public double calculaValorCalorico(int qtd) {
+		return qtd * this.valorCalorico;
+	}
+
+	public double calculaValorCalorico(int qtd, boolean frito) {
+		return frito ? calculaValorCalorico(qtd) * 1.5 : qtd * valorCalorico;
+	}
+
+	public Alimento(String nome) {
+		super();
+		this.nome = nome;
+	}
+
+	public Alimento(String nome, boolean salgado, float valorCalorico) {
+		this.nome = nome;
+		this.salgado = salgado;
+		this.valorCalorico = valorCalorico;
+	}
+
+	public boolean validaNome(int qtd) {
+		return nome.length() > qtd;
+	}
+
+	public boolean validaNome() {
+//		if (nome.length() > 3) return true;
+//		else return false;
+//		return nome.length() > 3 ? true : false;
+		return nome.length() > 3;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public boolean isSalgado() {
+		return salgado;
+	}
+
+	public void setSalgado(boolean salgado) {
+		this.salgado = salgado;
+	}
+
+	public float getValorCalorico() {
+		return valorCalorico;
+	}
+
+	public void setValorCalorico(float valorCalorico) {
+		this.valorCalorico = valorCalorico;
+	}
+
+	@Override
+	public String toString() {
+		return "Alimento [nome=" + nome + ", salgado=" + salgado + ", valorCalorico=" + valorCalorico + "]";
+	}
+
+	
+}
